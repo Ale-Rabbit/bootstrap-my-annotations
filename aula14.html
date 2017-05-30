@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Confraria da Bola</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="" >
+  <div class="container">
+       <button id="pause">Pausar</button>
+       <button id="anterior">Anterior</button>
+       <button id="proximo">Proximo</button>
+
+       <input type="text" id="number" value="0"> <button id="start">Iniciar</button>    
+
+       <div id="carousel" class="carousel slide">
+           <ol class="carousel-indicators">
+
+               <li data-target="#carousel" data-slide-to="0" class="active"> </li>
+               <li data-target="#carousel" data-slide-to="1" > </li>
+               <li data-target="#carousel" data-slide-to="2" > </li>
+               <li data-target="#carousel" data-slide-to="3" > </li>
+        
+            </ol>
+
+               <div class="carousel-inner" role="listbox">
+
+                   <div class="item active">
+                   <img src="img/slide01.jpg" alt="">
+                   <div class="carousel-caption">
+                   1° Slide
+                   </div>
+               </div>
+
+             
+                 <div class="item">
+                     <img src="img/slide02.jpg" alt="">
+                      <div class="carousel-caption">
+                      2° Slide
+                  </div>
+                </div>
+
+                 <div class="item">
+                    <img src="img/slide03.jpg" alt="">
+                    <div class="carousel-caption">
+                    3° Slide
+                    </div>
+                 </div>
+
+
+              <div class="item">
+                <img src="img/slide04.jpg" alt="">
+                <div class="carousel-caption">
+                3° Slide
+                </div>
+              </div>
+
+            </div> <!-- ./carousel inner -->
+
+
+               <a href="#carousel" class="left carousel-control" data-slide="prev">
+                 <i class="glyphicon glyphicon-chevron-left" ></i>
+               </a>
+
+               <a href="#carousel" class="right carousel-control" data-slide="next">
+                 <i class="glyphicon glyphicon-chevron-right" ></i>
+               </a>
+
+             </div> <!-- ./carrousel -->
+             
+   </div> <!-- ./container -->
+
+</div> <!-- .!vazio --> 
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+<!-- <script>
+  $('#carousel').carousel({
+     interval:1000,   //milisegundos que ele passa
+     keyboard: false   // por defaut é true
+  })
+</script> -->
+
+<script>
+     var btn_pause = $('#pause');
+     var btn_prev = $('#anterior');
+     var btn_next = $('#proximo');
+     var btn_start = $('#start');
+     var imput_number = $('#nunber');
+
+     var $carousel = $('#carousel');
+
+
+     btn_pause.on('click',function(){
+     $carousel.carousel('pause');
+
+     }); 
+
+     btn_prev.on('click',function(){
+     $carousel.carousel('prev');
+
+     });   
+
+     btn_next.on('click',function(){
+     $carousel.carousel('next');
+
+     });  
+
+      btn_start.on('click',function(){
+     $carousel.carousel(parceInt(input_number.val));
+
+     }); 
+      // não sei o pq não funciona
+
+
+
+</script>
+
+</body>
+
+</html>
+
