@@ -1,0 +1,34 @@
+body{
+	background-color: #2ecc71; 
+}
+
+.my_form{
+	margin-top: 10rem; /*equivale a 16 px*/
+	background-color: #fff;
+	padding: 2rem;
+	border-radius: 1rem;
+	box-shadow: 0 0 15px -2px rgba(0,0,0,.7); 
+}
+
+.form-control{
+	padding: 2rem; 
+
+}
+
+.form-control:first-of-type{
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}	
+
+.form-control:first-of-type{
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}	
+
+.btn-login{
+	background-color: #27ae60;
+}
+
+.btn-login:hover{
+	background-color: #4CAF50;
+}
